@@ -12,13 +12,20 @@
 <body>
 
   <section class="container">
-    <h1>Crie sua Lista</h1>
+    <h1>Tarefas</h1>
     <p>
-      <input type="text" class="input-tarefa">
+      <input type="text" class="input-tarefa" placeholder="Adicione uma tarefa">
       <button class="btn-tarefa">Adicionar</button>
     </p>
 
     <ul class="tarefas"></ul>
+  </section>
+
+  <!-- Nova seção de histórico e botão para limpar -->
+  <section class="container">
+    <h2>Histórico</h2>
+    <ul class="historico-tarefas"></ul>
+    <button class="btn-limpar-historico">Limpar Histórico</button>
   </section>
 
   <script src="main.js"></script>

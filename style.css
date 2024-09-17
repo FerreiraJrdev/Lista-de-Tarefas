@@ -36,13 +36,16 @@ form input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 form input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-form button {
+button.btn-tarefa {
   border: none;
   background: var(--primary-color);
   color: #fff;
@@ -50,9 +53,55 @@ form button {
   font-weight: 700;
   height: 50px;
   cursor: pointer;
-  margin-top: 30px;
+  width: 100%;
+  border-radius: 5px;
 }
 
-form button:hover {
+button.btn-tarefa:hover {
   background: var(--primary-color-darker);
+}
+
+ul.tarefas, ul.historico-tarefas {
+  list-style: none;
+  padding: 0;
+}
+
+ul.tarefas li, ul.historico-tarefas li {
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+ul.tarefas li:hover {
+  background: #e4e4e4;
+}
+
+ul.historico-tarefas li {
+  background: #ddd;
+}
+
+button.apagar {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.apagar:hover {
+  background: #cc0000;
+}
+
+.horario {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 10px;
 }
